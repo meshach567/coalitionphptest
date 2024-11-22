@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Management</title>
+    <title>Product Skill Test</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body class="container mt-5">
-    <h1 class="mb-4">Product Management</h1>
+    <h1 class="mb-4">Product Skill Test</h1>
     <form id="productForm">
         <div class="mb-3">
             <label for="name" class="form-label">Product Name</label>
@@ -53,7 +53,7 @@
                 let rows = '';
                 let totalSum = 0;
                 response.data.forEach(product => {
-                    const totalValue = product.quantity_in_stock * product.price_per_item;
+                    const totalValue = product.quantityInstock * product.pricePeritem;
                     rows += `
                         <tr>
                             <td>${product.name}</td>
